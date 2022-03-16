@@ -25,6 +25,8 @@ export default function(
             {
                 const {
                     extend,
+                    getSafeAliasFromAlias,
+                    getSafeAliasFromResolveInfo,
                     pgSql: sql,
                     pg2gqlForType,
                     graphql: { GraphQLNonNull, GraphQLString },
@@ -108,7 +110,7 @@ export default function(
                                                                 type,
                                                                 typeModifier
                                                             ),
-                                                            fieldName + parsedResolveInfoFragment.alias
+                                                            getSafeAliasFromAlias(parsedResolveInfoFragment.alias)
                                                         );
                                                     },
                                                 };
@@ -133,7 +135,7 @@ export default function(
                                             ),
                                             resolve(data, _args, _ctx, _info)
                                             {
-                                                return convertFromPg(data[fieldName + _info.path.key]);
+                                                return convertFromPg(data[getSafeAliasFromResolveInfo(_info)]);
                                             }
                                         };
                                     },

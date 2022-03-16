@@ -1,0 +1,19 @@
+{
+  "name": "postgraphile-plugin-timestamp-format",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RedShift1/postgraphile-plugin-timestamp-format.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RedShift1/postgraphile-plugin-timestamp-format/issues"
+  },
+  "homepage": "https://github.com/RedShift1/postgraphile-plugin-timestamp-format#readme"
+}

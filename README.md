@@ -6,6 +6,10 @@ Adds formatting for `timestamptz` fields through
 ![GraphiQL Screenshot](doc/graphiql_screenshot.png)
 
 ## Installation
+Install the npm package:
+
+`npm install postgraphile-plugin-timestamp-format`
+
 Add the `date_format_tz` function to your database:
 
 ```postgresql

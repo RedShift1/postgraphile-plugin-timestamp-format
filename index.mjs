@@ -132,7 +132,10 @@ export default function(
                                             }
                                         };
                                     },
-                                    { pgFieldIntrospection: attr }
+                                    {
+                                        pgFieldIntrospection: attr,
+                                        isPostGraphilePluginTimestampFormatField: true
+                                    }
                                 ),
                             },
                             `Adding formatted timestamp field for ${describePgEntity(

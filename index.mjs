@@ -135,7 +135,7 @@ export default function(
                                     { pgFieldIntrospection: attr }
                                 ),
                             },
-                            `Adding field for ${describePgEntity(
+                            `Adding formatted timestamp field for ${describePgEntity(
                                 attr
                             )}. You can rename this field with a 'Smart Comment':\n\n  ${sqlCommentByAddingTags(
                                 attr,

@@ -73,13 +73,6 @@ export default function(
 
                         const fieldName = nameFn(inflection.column(attr));
 
-                        if (memo[fieldName])
-                        {
-                            throw new Error(
-                                `Two columns produce the same GraphQL field name '${fieldName}' on class '${table.namespaceName}.${table.name}'; one of them is '${attr.name}'`
-                            );
-                        }
-
                         memo = extend(
                             memo,
                             {
